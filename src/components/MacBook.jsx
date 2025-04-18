@@ -37,18 +37,25 @@ const MacBook = () => {
                     <img src={currentColor.img}
                         alt={`MacBook Air with ${currentMb.chip}`}
                         className='2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:mt-6' />
-                    <span className='2xl:text-lg xl:text-sm font-medium text-gray-700 mb-2 text-center md:text-left '>Gold</span>
+                    <span className='2xl:text-lg xl:text-sm font-medium text-gray-700 mb-2 text-center md:text-left '>{currentColor.label}</span>
                     <div className='flex space-x-2 mb-4 md:text-left justify-center md:justify-start'>
-                        <button className='2xl:w-6 sm:w-5 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-blue-500'></button>
-                        <button className='2xl:w-6 sm:w-5 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-blue-500'></button>
-                        <button className='2xl:w-6 sm:w-5 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-blue-500'></button>
+                        {currentMb.colors.map((col, index) => (
+                            <button
+                                key={index}
+                                style={{ backgroundColor: col.bg }}
+                                onClick={() => setSelectedColor(index)}
+                                className={`2xl:w-6 sm:w-5 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-blue-500 ${selectedColor === index ? "border-2 border-blue-400" : "border-transparent"
+                                    }`}></button>
+                        ))}
                     </div>
-                    <img src='Assets/images/apple-m2-icon.png' alt='chip' className='w-12 h-12 2xl:mb-2 xl:mb-2' />
+                    <img src={currentMb.icon} alt={`Apple ${currentMb.chip}`} className='w-12 h-12 2xl:mb-2 xl:mb-2' />
                     <div className='2xl:mb-4 xl:mb-2 text-center md:text-left'>
-                        <p className="2xl:text-lg xl:text-base font-semibold text-gray-700 mb-0.5">8-Core CPU</p>
-                        <p className="2xl:text-lg xl:text-base font-semibold text-gray-700 mb-0.5">8-Core CPU</p>
-                        <p className="2xl:text-lg xl:text-base font-semibold text-gray-700 mb-0.5">8-Core CPU</p>
-                        <p className="2xl:text-lg xl:text-base font-semibold text-gray-700 mb-0.5">8-Core CPU</p>
+                        {currentMb.specs.map((spec, index) => (
+                            <p 
+                            key={index}
+                            className="2xl:text-lg xl:text-base font-semibold text-gray-700 mb-0.5">{spec}</p>
+                        ))}
+
                     </div>
                     <button type='button' className='w-min text-sm py-1 px-3 bg-blue-400 rounded-full text-white mt-4 md:mt-0'>Buy</button>
                 </div>
