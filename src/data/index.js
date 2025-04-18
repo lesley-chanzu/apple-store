@@ -63,27 +63,27 @@ export const macbookModels = [
   {
     chip: 'M2',
     price: 'From $999',
-    img: 'images/macbook-air-midnight-m2.jpg',
+    img: 'Assets/images/macbook-air-midnight-m2.jpg',
     colors: [
-      { label: 'Space gray', bg: '#b2b5b8', img: 'images/macbook-air-spacegray-m2.jpg' },
-      { label: 'Gold', bg: '#f0e0d3', img: 'images/macbook-air-gold-m2.jpg' },
-      { label: 'Silver', bg: '#e0e2e1', img: 'images/macbook-air-silver-m2.jpg' },
+      { label: 'Space gray', bg: '#b2b5b8', img: 'Assets/images/macbook-air-spacegray-m2.jpg' },
+      { label: 'Gold', bg: '#f0e0d3', img: 'Assets/images/macbook-air-gold-m2.jpg' },
+      { label: 'Silver', bg: '#e0e2e1', img: 'Assets/images/macbook-air-silver-m2.jpg' },
     ],
     specs: ['8-Core CPU', '8-Core GPU', '16GB Unified Memory', '256GB SSD Storage'],
-    icon: 'images/apple-m2-icon.png',
+    icon: 'Assets/images/apple-m2-icon.png',
   },
   {
     chip: 'M3',
     price: 'From $1,299',
-    img: 'images/macbook-air-space-gray-m3.jpg',
+    img: 'Assets/images/macbook-air-space-gray-m3.jpg',
     colors: [
-      { label: 'Midnight', bg: '#2e3641', img: 'images/macbook-air-midnight-m3.jpg' },
-      { label: 'Starlight', bg: '#f0e5d3', img: 'images/macbook-air-starlight-m3.jpg' },
-      { label: 'Space gray', bg: '#7d7e80', img: 'images/macbook-air-spacegray-m3.jpg' },
-      { label: 'Silver', bg: '#e3e4e6', img: 'images/macbook-air-silver-m3.jpg' },
+      { label: 'Midnight', bg: '#2e3641', img: 'Assets/images/macbook-air-midnight-m3.jpg' },
+      { label: 'Starlight', bg: '#f0e5d3', img: 'Assets/images/macbook-air-starlight-m3.jpg' },
+      { label: 'Space gray', bg: '#7d7e80', img: 'Assets/images/macbook-air-spacegray-m3.jpg' },
+      { label: 'Silver', bg: '#e3e4e6', img: 'Assets/images/macbook-air-silver-m3.jpg' },
     ],
     specs: ['8-Core CPU', '10-Core GPU', '24GB Unified Memory', '512GB SSD Storage'],
-    icon: 'images/apple-m3-icon.png',
+    icon: 'Assets/images/apple-m3-icon.png',
   },
 ]
 
