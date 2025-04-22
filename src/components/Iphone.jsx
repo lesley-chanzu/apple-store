@@ -3,7 +3,7 @@ import { iphoneModels } from '../data/index'
 
 const Iphone = () => {
     return (
-        <div className='w-full h-full flex flex-col items-center justify-around p-8'>
+        <div className='w-full h-full flex flex-col items-center justify-around p-8 '>
             <h3 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-gray-800 mb-6'>
                 Which iphone suits you?
             </h3>
